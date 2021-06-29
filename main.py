@@ -32,7 +32,7 @@ lbl = Label(root, text="Username", font=("Helvitica", 10))
 
 
 var1 = IntVar()
-
+var1.set(1)
 e1 = Entry(root, show="*")
 e1.bind('<Return>', login)
 
