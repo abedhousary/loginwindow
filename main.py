@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter.messagebox import *
+from tkinter.ttk import  *
 
-
-def showinput():
+def showinputs():
     if var1.get() == 1:
         e1.config(show="")
     else:
@@ -33,11 +33,12 @@ lbl = Label(root, text="Username", font=("Helvitica", 10))
 
 var1 = IntVar()
 var1.set(1)
+
 e1 = Entry(root, show="*")
 e1.bind('<Return>', login)
 
 showinput = Checkbutton(root, text="Show input",
-                        command=showinput, variable=var1)
+                        command=showinputs, variable=var1)
 
 
 btn = Button(root, text="Login", width=9, command=login)
@@ -50,5 +51,5 @@ btn.place(x=250, y=160)
 
 showinput.place(x=20, y=120)
 
-
+showinputs()
 root.mainloop()
