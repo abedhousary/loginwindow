@@ -36,7 +36,7 @@ var1.set(1)
 
 e1 = Entry(root,show="*")
 e1.bind('<Return>', login)
-
+e2 = Entry(root)
 showinput = Checkbutton(root, text="Show input",
                         command=showinputs, variable=var1)
 
@@ -46,7 +46,7 @@ btn = Button(root, text="Login", width=9, command=login)
 lbl.place(x=20, y=50)
 
 e1.place(x=120, y=50)
-
+e2.place(x =120 , y = 150) 
 btn.place(x=250, y=160)
 
 showinput.place(x=20, y=120)
