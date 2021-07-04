@@ -9,7 +9,7 @@ def showinputs():
         e1.config(show="*")
 
 
-def login(event):
+def login(event=None):
     if e1.get() == "admin":
         showinfo("Login", f"Welcome back {e1.get()}")
     else:
